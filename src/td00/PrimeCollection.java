@@ -48,7 +48,7 @@ public class PrimeCollection {
 		
 		System.out.println("hello");
 		PrimeCollection collection = new PrimeCollection();
-		collection.InitRandom(100, 1000);
+		collection.InitRandom(100, 2000);
 		int i = 0;
 		while (i < collection.getNumbers().size() ) {
 			if (isPrime(collection.getNumbers().get(i))) {
