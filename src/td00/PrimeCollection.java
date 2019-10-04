@@ -44,19 +44,23 @@ public class PrimeCollection {
         return true; 
     } 
 	
+	private void printPrimes() {
+		int i = 0;
+		while (i < this.getNumbers().size() ) {
+			if (isPrime(this.getNumbers().get(i))) {
+				System.out.println(this.getNumbers().get(i));
+			}
+			i++;
+	
+		}
+	}
+	
 	public static void main(String[] args) {
 		
 		System.out.println("hello");
 		PrimeCollection collection = new PrimeCollection();
 		collection.InitRandom(100, 2000);
-		int i = 0;
-		while (i < collection.getNumbers().size() ) {
-			if (isPrime(collection.getNumbers().get(i))) {
-				System.out.println(collection.getNumbers().get(i));
-			}
-
-			i++;
-		}
+		collection.printPrimes();
 		// TODO Auto-generated method stub
 		
 
