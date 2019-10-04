@@ -1,4 +1,4 @@
-CLAUX Aurélien iofhze
+CLAUX Aurélien
 
 POM :  xml qui décrit la structure du projet
 
@@ -9,5 +9,6 @@ artifactID : identifiant du
 <maven.compiler.target> spécifie la version de java à utiliser pour executer les .java
 
 8. La classe Path sert à spécifier ou est la classe à executer.
+
 
 Modification
