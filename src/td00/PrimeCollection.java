@@ -6,7 +6,7 @@ public class PrimeCollection {
 	private ArrayList<Integer> numbers;
 	
 	
-	private PrimeCollection() {
+	public PrimeCollection() {
 		
 		this.numbers = new ArrayList<Integer>();
 	}
@@ -19,7 +19,7 @@ public class PrimeCollection {
 	 * @param n : Nombre d'entiers à générer
 	 * @param m : Borne Max de la generation d'alétatoire
 	 */
-	private void InitRandom(int n,int m) {
+	void initRandom(int n,int m) {
 		Random rand = new Random();
 		int i = 0;
 		while (i <= n) {
@@ -32,11 +32,9 @@ public class PrimeCollection {
 	
 	static boolean isPrime(int n) 
     { 
-        // Corner case 
         if (n <= 1) 
             return false; 
   
-        // Check from 2 to n-1 
         for (int i = 2; i < n; i++) 
             if (n % i == 0) 
                 return false; 
@@ -59,7 +57,7 @@ public class PrimeCollection {
 		
 		System.out.println("hello");
 		PrimeCollection collection = new PrimeCollection();
-		collection.InitRandom(100, 2000);
+		collection.initRandom(100, 2000);
 		collection.printPrimes();
 		// TODO Auto-generated method stub
 		
