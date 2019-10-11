@@ -1,0 +1,19 @@
+1. P est instantiable grace au constructeur par dfaut
+2. les variables ne sont pas accessibles, il faut ajouter des accesseurs
+3. Les variables ne doivent pas etre accessibles de n'importe ou
+4. Un accesseur permet aux instances de sa classe de retourner la valeur d'un attribut
+5. Un constructeur a été crée donc celui par défaut n'existe plus.
+6. si des variables ont le meme nom que des atrtibuts on utilise le mot clé this pour les appeler.
+7. On peut creer une une variable static int qui s'incrementera a chaque fois qu'un point est crée.
+8. La signature de chaque constructeur n'est pas la même, il n'y a pas de problème.
+
+exercice 2 egalité:
+
+1. Le code affiche true false. la variable p2 prends la valeur de l'objet p1 alors que p3 est un nouvel objet ayant seulement les memes valeurs d'attributs. 
+ Le equals si il n'est pas override, compare l'adresse memoire.
+
+3. p2 ET p1 pointe le meme objet donc la ligne 7 marche. p3 est un autre objet et n'a pas ajouté indexOf ne le trouve pas dans la list et donc retourne -1
+Il faut redefinir le equals
+
+Exercice 3 ligne brisée
+
