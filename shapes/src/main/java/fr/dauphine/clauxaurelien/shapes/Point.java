@@ -45,10 +45,10 @@ public class Point
     	System.out.println(list.indexOf(p3));
     }
     public int getX() {
-		return x;
+		return this.x;
 	}
     public int getY() {
-		return y;
+		return this.y;
 	}
     
     @Override
