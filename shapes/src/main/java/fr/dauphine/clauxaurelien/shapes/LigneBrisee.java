@@ -11,36 +11,22 @@ public class LigneBrisee {
 		this.points = new LinkedList<Point>();
 	}
 	
-	private void add(Point p) throws NullPointerException {
+	public void add(Point p) throws NullPointerException {
 		Objects.requireNonNull(p);
-		for (int i = 0; i <= this.points.length; i++) {
-			if (this.points[i] != null) {
-				this.points[i] = p;
+		for (int i = 0; i <= this.points.size(); i++) {
+			if (this.points.get(i) != null) {
+				this.points.set(i,p);
 			}
 		}
 	}
 	
-	private int pointCapacity() {
-		return this.points.length;		
+	public int pointCapacity() {
+		return this.points.size();		
 	}
 	
-	private int nbpoints() {
-		int counter = 0;
-		for (int i = 0; i <= this.points.length; i++) {
-			if (this.points[i] != null) {
-				counter++;
-			}
-		}
-		return counter;
-	}
 	
-	private boolean contains(Point p) throws NullPointerException {
-		Objects.requireNonNull(p);
-		for (Point point : this.points) {
-			if (point.equals(p)){
-				return true;
-			}
-		}
-		return false;
+	public boolean contains(Point p) throws NullPointerException {
+		
+		return this.points.contains(p);
 	}
 }

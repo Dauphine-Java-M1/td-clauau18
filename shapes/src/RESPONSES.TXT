@@ -17,3 +17,14 @@ Il faut redefinir le equals
 
 Exercice 3 ligne brisée
 
+2. erreurd'éxecution, index out of bounds.
+6. Les methodes sont deja implementes dans linkedlist.
+
+Mutabilité et cercle 
+
+1 La methode Translate peut etre sous la forme 
+private void translate(int dx,int dy)
+private boolean translate(int dx,int dy) Indiquant si la translation n'est pas par (0,0).
+private int translate(int dx,int dy), renvoyant les nouvelles coordonnées du Point.
+
+
