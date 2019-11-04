@@ -76,9 +76,8 @@ public class Point
     	return isSame;
     }
     
-    public void translate(int dx,int dy) {
-    	this.x = this.x + dx;
-    	this.y = this.y + dy;
+    public Point translate(int dx,int dy) {
+    	return new Point(this.getX()+dx, this.getY()+dy);
     }
 }	
 

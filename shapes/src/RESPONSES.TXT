@@ -27,4 +27,7 @@ private void translate(int dx,int dy)
 private boolean translate(int dx,int dy) Indiquant si la translation n'est pas par (0,0).
 private int translate(int dx,int dy), renvoyant les nouvelles coordonnées du Point.
 
+5 : Il faut creer un nouveau Point lors de l'instanciation du cercle. Sinon la methode translate agira sur le point passé en reference et non pas sur le "vrai" centre du cercle
+
+6 : Pour eviter ce probleme, Translate n'applique plus un changement sur le point, mais crée desormais un nouveau point. le translate se faisant sur le point renvoyé par getCentre, il ne modifie pas le reel point du centre
 
