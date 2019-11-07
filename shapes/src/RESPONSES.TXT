@@ -31,3 +31,11 @@ private int translate(int dx,int dy), renvoyant les nouvelles coordonnées du Po
 
 6 : Pour eviter ce probleme, Translate n'applique plus un changement sur le point, mais crée desormais un nouveau point. le translate se faisant sur le point renvoyé par getCentre, il ne modifie pas le reel point du centre
 
+9 : Une methode d'instance n'est pas approprié, il faut la rendre static pour voir si 1 point est dans plusieurs instances
+
+Ring : 
+
+1. l'heritage est interessant, un anneau est un cercle dont un cercle interne a été supprimé.
+
+4. Sans code supplemtenaire c'est le toString de Circle qui est appellé
+

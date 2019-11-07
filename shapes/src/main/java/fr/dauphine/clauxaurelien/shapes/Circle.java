@@ -1,8 +1,10 @@
 package fr.dauphine.clauxaurelien.shapes;
 
+import java.util.ArrayList;
+
 public class Circle {
-	private Point centre;
-	private int rayon;
+	protected Point centre;
+	protected int rayon;
 	
 	public static void main( String[] args )
     {
@@ -47,6 +49,18 @@ public class Circle {
 			isContained = true;
 		}
 		return isContained;
-}
+	}
+	
+	public static boolean contains(Point p, ArrayList<Circle> circles) {
+		boolean isContained = false;
+		for(int i = 0; i< circles.size(); i++) {
+			double norme = Math.sqrt((Math.pow(p.getX()-circles.get(i).getCentre().getX(), 2)) + Math.pow(p.getY()-circles.get(i).getCentre().getY(), 2));
+			if (norme < circles.get(i).rayon) {
+				isContained = true;
+			}
+		
+		}
+		return isContained;
+	}
 	
 }
